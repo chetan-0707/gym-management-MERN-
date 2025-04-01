@@ -9,7 +9,6 @@ exports.addMembership = async(req, res) => {
             months
         });
 
-
         if (memberShip) {
             memberShip.price = price;
             await memberShip.save();
